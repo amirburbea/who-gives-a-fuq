@@ -1,0 +1,14 @@
+@import '~@blueprintjs/core/lib/scss/variables';
+
+.container {
+  > .li {
+    font-weight: 400;
+
+    &.active {
+      > :global(.#{$ns}-button) {
+        font-weight: bold;
+        background-color: red;
+      }
+    }
+  }
+}
